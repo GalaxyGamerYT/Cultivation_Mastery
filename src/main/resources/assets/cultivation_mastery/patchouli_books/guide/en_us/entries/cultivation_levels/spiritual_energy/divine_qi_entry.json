@@ -1,0 +1,15 @@
+{
+  "name": "Divine Qi",
+  "icon": "cultivation_mastery:low_spirit_stone",
+  "category": "cultivation_mastery:spiritual_energy_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Cultivators who have condensed their $(true qi) into $(divine qi) have stepped into divinity. $(divine qi) is a condensed and pure form of $(true qi) with a connection to the creation of $(heaven and earth). $(divine qi) is only naturally occurring in high spiritual areas, these areas have an extreme connection to the creation of $(heaven and earth) making their $(spiritual energy) much more vast and pure and making more extreme conditions appear in these areas."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Cultivators who use $(divine qi) are able to use $(l:cultivation_mastery:items_category/spirit_stones_category/low_spirit_stones_entry/high_spirit_stones_entry)high spirit stones$(/l) to gather $(spiritual energy). $(divine qi) is able to put an extreme amount of pressure on cultivators with a lower level of cultivation, making it beneficial but will lead to death when used with even a trace of murderous intent. $(divine qi) is the pinnacle of $(spiritual energy) between heaven and earth."
+    }
+  ]
+}

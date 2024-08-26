@@ -1,0 +1,110 @@
+{
+  "credit": "Made with Blockbench",
+  "texture_size": [
+    80,
+    80
+  ],
+  "elements": [
+    {
+      "name": "Base 1",
+      "from": [0, 0, 0],
+      "to": [16, 2, 16],
+      "faces": {
+        "north": {"uv": [0, 0, 16, 2], "texture": "#6"},
+        "east": {"uv": [0, 0, 2, 16], "rotation": 270, "texture": "#6"},
+        "south": {"uv": [0, 0, 16, 2], "texture": "#6"},
+        "west": {"uv": [0, 0, 2, 16], "rotation": 90, "texture": "#6"},
+        "up": {"uv": [16, 16, 0, 0], "texture": "#6"},
+        "down": {"uv": [16, 0, 0, 16], "texture": "#6"}
+      }
+    },
+    {
+      "name": "Base 2",
+      "from": [2, 2, 2],
+      "to": [14, 4, 14],
+      "faces": {
+        "north": {"uv": [0, 0, 16, 2], "texture": "#6"},
+        "east": {"uv": [0, 2, 2, 14], "rotation": 270, "texture": "#6"},
+        "south": {"uv": [0, 12, 16, 14], "texture": "#6"},
+        "west": {"uv": [0, 2, 2, 14], "rotation": 90, "texture": "#6"},
+        "up": {"uv": [16, 14, 0, 2], "texture": "#6"},
+        "down": {"uv": [16, 0, 0, 16], "texture": "#6"}
+      }
+    },
+    {
+      "name": "Pillar Bottom",
+      "from": [4, 4, 4],
+      "to": [12, 16, 12],
+      "faces": {
+        "north": {"uv": [0, 0, 16, 14], "texture": "#5"},
+        "east": {"uv": [0, 0, 16, 14], "texture": "#5"},
+        "south": {"uv": [0, 0, 16, 14], "texture": "#5"},
+        "west": {"uv": [0, 0, 16, 14], "texture": "#5"},
+        "up": {"uv": [16, 14, 0, 0], "texture": "#5"},
+        "down": {"uv": [16, 0, 0, 14], "texture": "#5"}
+      }
+    },
+    {
+      "name": "Pillar Top",
+      "from": [4, 16, 4],
+      "to": [12, 32, 12],
+      "faces": {
+        "north": {"uv": [0, 0, 16, 16], "texture": "#5"},
+        "east": {"uv": [0, 0, 16, 16], "texture": "#5"},
+        "south": {"uv": [0, 0, 16, 16], "texture": "#5"},
+        "west": {"uv": [0, 0, 16, 16], "texture": "#5"},
+        "up": {"uv": [0, 0, 16, 16], "texture": "#5"},
+        "down": {"uv": [0, 0, 16, 16], "texture": "#5"}
+      }
+    },
+    {
+      "name": "Pillar Top Cover",
+      "from": [4, 32, 4],
+      "to": [12, 32, 12],
+      "faces": {
+        "north": {"uv": [0, 0, 16, 16], "texture": "#4"},
+        "east": {"uv": [0, 0, 16, 16], "texture": "#4"},
+        "south": {"uv": [0, 0, 16, 16], "texture": "#4"},
+        "west": {"uv": [0, 0, 16, 16], "texture": "#4"},
+        "up": {"uv": [16, 16, 0, 0], "texture": "#4"},
+        "down": {"uv": [16, 0, 0, 16], "texture": "#4"}
+      }
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "scale": [0.25, 0.25, 0.25]
+    },
+    "thirdperson_lefthand": {
+      "scale": [0.25, 0.25, 0.25]
+    },
+    "firstperson_righthand": {
+      "scale": [0.5, 0.5, 0.5]
+    },
+    "firstperson_lefthand": {
+      "scale": [0.5, 0.5, 0.5]
+    },
+    "ground": {
+      "scale": [0.25, 0.25, 0.25]
+    },
+    "gui": {
+      "translation": [0, -4, 0],
+      "scale": [0.5, 0.5, 0.5]
+    },
+    "head": {
+      "translation": [0, 14, 0]
+    },
+    "fixed": {
+      "translation": [0, -3.75, 0],
+      "scale": [0.5, 0.5, 0.5]
+    }
+  },
+  "groups": [
+    {
+      "name": "VoxelShapes",
+      "origin": [8, 8, 8],
+      "color": 0,
+      "children": [0, 1, 2, 3, 4]
+    }
+  ]
+}

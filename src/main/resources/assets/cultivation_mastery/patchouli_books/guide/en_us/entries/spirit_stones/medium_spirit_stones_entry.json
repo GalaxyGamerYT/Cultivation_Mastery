@@ -1,0 +1,34 @@
+{
+  "name": "Medium Spirit Stones",
+  "icon": "cultivation_mastery:medium_spirit_stone",
+  "category": "cultivation_mastery:items/spirit_stones_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "cultivation_mastery:medium_spirit_stone"
+      }
+    },
+    {
+      "type": "patchouli:text",
+      "text": "These stones are formed when $(spiritual energy) is condensed by $(heaven and earth) in areas with a higher density of $(spiritual energy) after being condensed and crystallised into Low Spirit Stones. They can be used to power medium level formations and help cultivators gather and condense $(spiritual energy) into $(true qi)."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "tag": "cultivation_mastery:medium_spirit_stone_ores"
+      },
+      "text": "This is what Medium Spirit Stones look like when naturally formed."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "cultivation_mastery:medium_spirit_stone_from_low_spirit_stones",
+      "text": "Medium Spirit Stones can be condensed from Low Spirit Stones by combining the $(spiritual energy) of multiple Spirit Stones."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "cultivation_mastery:medium_spirit_stones_from_high_spirit_stone",
+      "text": "Medium Spirit Stones can be converted from High Spirit Stones by extracting the $(spiritual energy)."
+    }
+  ]
+}

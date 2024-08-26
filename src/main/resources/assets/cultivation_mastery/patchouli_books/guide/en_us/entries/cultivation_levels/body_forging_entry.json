@@ -1,0 +1,11 @@
+{
+  "name": "Body Forging",
+  "icon": "minecraft:netherite_chestplate",
+  "category": "cultivation_mastery:cultivation_levels_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "This is the start of your cultivation journey. You have to forge your body to allow Spritual Energy or Qi to gather and flow smoothly through your body."
+    }
+  ]
+}

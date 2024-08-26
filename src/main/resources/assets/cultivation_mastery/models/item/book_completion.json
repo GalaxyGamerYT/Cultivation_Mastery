@@ -1,0 +1,12 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "patchouli:item/book_gray"
+  },
+  "overrides": [
+    {
+      "predicate": { "completion": 0 },
+      "model": "cultivation_mastery:item/book_low_level"
+    }
+  ]
+}

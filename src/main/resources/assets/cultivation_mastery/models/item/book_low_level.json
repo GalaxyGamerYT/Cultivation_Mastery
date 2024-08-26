@@ -1,0 +1,6 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "cultivation_mastery:item/book_low_level"
+	}
+}

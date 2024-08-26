@@ -1,0 +1,24 @@
+{
+  "name": "Low Spirit Stones",
+  "icon": "cultivation_mastery:low_spirit_stone",
+  "category": "cultivation_mastery:items/spirit_stones_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "cultivation_mastery:low_spirit_stone"
+      }
+    },
+    {
+      "type": "patchouli:text",
+      "text": "These stones are formed when $(spiritual energy) is condensed by $(heaven and earth). They can be used to power low level formations and help cultivators gather and condense $(spiritual energy)."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "tag": "cultivation_mastery:low_spirit_stone_ores"
+      },
+      "text": "This is what Low Spirit Stones look like when naturally formed."
+    }
+  ]
+}

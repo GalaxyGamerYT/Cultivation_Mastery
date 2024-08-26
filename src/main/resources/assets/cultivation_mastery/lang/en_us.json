@@ -1,0 +1,48 @@
+{
+  "item.cultivation_mastery.yin_yang": "Yin Yang",
+  "item.cultivation_mastery.mandala": "Mandala",
+
+  "item.cultivation_mastery.low_spirit_stone": "Low Spirit Stone",
+  "item.cultivation_mastery.medium_spirit_stone": "Medium Spirit Stone",
+  "item.cultivation_mastery.high_spirit_stone": "High Spirit Stone",
+
+  "block.cultivation_mastery.oak_training_post": "Oak Training Post",
+  "block.cultivation_mastery.spruce_training_post": "Spruce Training Post",
+  "block.cultivation_mastery.birch_training_post": "Birch Training Post",
+  "block.cultivation_mastery.jungle_training_post": "Jungle Training Post",
+  "block.cultivation_mastery.acacia_training_post": "Acacia Training Post",
+  "block.cultivation_mastery.dark_oak_training_post": "Dark Oak Training Post",
+  "block.cultivation_mastery.mangrove_training_post": "Mangrove Training Post",
+  "block.cultivation_mastery.cherry_training_post": "Cherry Training Post",
+
+  "block.cultivation_mastery.low_spirit_stone_ore": "Low Spirit Stone Ore",
+  "block.cultivation_mastery.deepslate_low_spirit_stone_ore": "Deepslate Low Spirit Stone Ore",
+  "block.cultivation_mastery.medium_spirit_stone_ore": "Medium Spirit Stone Ore",
+  "block.cultivation_mastery.deepslate_medium_spirit_stone_ore": "Deepslate Medium Spirit Stone Ore",
+  "block.cultivation_mastery.high_spirit_stone_ore": "High Spirit Stone Ore",
+  "block.cultivation_mastery.deepslate_high_spirit_stone_ore": "Deepslate High Spirit Stone Ore",
+
+  "tooltip.cultivation_mastery.training_post.1": "Punch to train your body in Martial Arts Cultivation",
+  "tooltip.cultivation_mastery.training_post.2": "Shift Right Click to break",
+
+  "tooltip.cultivation_mastery.essences.1": "The essence of ",
+  "tooltip.cultivation_mastery.essences.2": "The essence of ",
+
+  "tooltip.cultivation_mastery.yin_yang": "BALANCE",
+  "tooltip.cultivation_mastery.mandala": "HEAVEN AND EARTH",
+
+  "tooltip.cultivation_mastery.spirit_stone": "Useful for gathering §dSpiritual Energy",
+
+  "itemgroup.cultivation": "Cultivation",
+
+  "message.cutivation_mastery.body_increase": "Body cultivation increased",
+
+  "text.autoconfig.cultivation_mastery.title": "Cultivation Mastery Config",
+
+  "text.autoconfig.cultivation_mastery.category.general": "General",
+  "text.autoconfig.cultivation_mastery.category.debug": "Debug",
+
+  "text.autoconfig.cultivation_mastery.option.debug.essenceTooltipToggle": "Essence Tooltip Toggle",
+
+  "text.autoconfig.cultivation_mastery.option.debug.essenceTooltipToggle.@Tooltip": "Controls if you can see the unknown text on the tooltips for the essence items"
+}

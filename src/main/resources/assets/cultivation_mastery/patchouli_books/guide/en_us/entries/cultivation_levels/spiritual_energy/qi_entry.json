@@ -1,0 +1,15 @@
+{
+  "name": "Qi",
+  "icon": "cultivation_mastery:low_spirit_stone",
+  "category": "cultivation_mastery:spiritual_energy_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Cultivators who have forged their bodies and have started to gather $(spiritual energy), converts this energy into $(qi) and stores it in their bodies."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Cultivators who use $(qi) are able to use $(l:cultivation_mastery:items_category/spirit_stones_category/low_spirit_stones_entry)low spirit stones$(/l) to gather $(spiritual energy). If they use $(l:cultivation_mastery:items_category/spirit_stones_category)spirit stones$(/l) with a higher level of $(spiritual energy), their body will explode due to having such a condensed and pure form of $(qi) in their body that it can't handle."
+    }
+  ]
+}

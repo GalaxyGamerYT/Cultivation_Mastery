@@ -1,0 +1,11 @@
+{
+  "name": "Mortal",
+  "icon": "minecraft:diamond",
+  "category": "cultivation_mastery:spiritual_energy_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Mortals can't use or gather $(spiritual energy), it is recommended to not use spirit stones or their body will explode, shattering their mortal soul. This is due to not having a body that can handle the $(spiritual energy) of $(heaven and earth). If their soul shatters they will loose any cultivation progress they may have had in their life, resetting them to a mortal in their next life."
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Spirit Stones",
+  "description": "Different levels of spirit stones.",
+  "icon": "cultivation_mastery:high_spirit_stone",
+  "parent": "cultivation_mastery:items_category"
+}

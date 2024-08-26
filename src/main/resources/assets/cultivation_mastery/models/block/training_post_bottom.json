@@ -1,0 +1,61 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [
+		80,
+		80
+	],
+	"elements": [
+		{
+			"name": "Base 1",
+			"from": [0, 0, 0],
+			"to": [16, 2, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 2], "texture": "#8"},
+				"east": {"uv": [0, 0, 2, 16], "rotation": 270, "texture": "#8"},
+				"south": {"uv": [0, 0, 16, 2], "texture": "#8"},
+				"west": {"uv": [0, 0, 2, 16], "rotation": 90, "texture": "#8"},
+				"up": {"uv": [16, 16, 0, 0], "texture": "#8"},
+				"down": {"uv": [16, 0, 0, 16], "texture": "#8"}
+			}
+		},
+		{
+			"name": "Base 2",
+			"from": [2, 2, 2],
+			"to": [14, 4, 14],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 2], "texture": "#8"},
+				"east": {"uv": [0, 2, 2, 14], "rotation": 270, "texture": "#8"},
+				"south": {"uv": [0, 12, 16, 14], "texture": "#8"},
+				"west": {"uv": [0, 2, 2, 14], "rotation": 90, "texture": "#8"},
+				"up": {"uv": [16, 14, 0, 2], "texture": "#8"}
+			}
+		},
+		{
+			"name": "Pillar Bottom",
+			"from": [4, 4, 4],
+			"to": [12, 16, 12],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 14], "texture": "#7"},
+				"east": {"uv": [0, 0, 16, 14], "texture": "#7"},
+				"south": {"uv": [0, 0, 16, 14], "texture": "#7"},
+				"west": {"uv": [0, 0, 16, 14], "texture": "#7"}
+			}
+		},
+		{
+			"name": "Pillar Top",
+			"from": [4, 16, 4],
+			"to": [12, 16, 12],
+			"faces": {
+				"up": {"uv": [0, 0, 16, 16], "texture": "#3"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "VoxelShapes",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0, 1, 2, 3]
+		}
+	]
+}

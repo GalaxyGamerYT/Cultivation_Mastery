@@ -1,0 +1,12 @@
+{
+  "name": "Order Of Cultivation",
+  "icon": "minecraft:writable_book",
+  "category": "cultivation_mastery:cultivation_levels_category",
+  "priority": "true",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The cultivation realms are:$(li)Mortal$(li)Body Forging$(li)Qi Gathering$(li)Core Condensation$(li)Golden Core$(li)Primordial Spirit$(li)Nascent Soul$(li)Divinity"
+    }
+  ]
+}
