@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:cultivation_mastery/root",
+  "criteria": {
+    "got_diamonds": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:diamond"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Diamonds again...",
+    "icon": {
+      "item": "minecraft:diamond"
+    },
+    "title": "Diamonds"
+  },
+  "requirements": [
+    [
+      "got_diamonds"
+    ]
+  ],
+  "rewards": {
+    "loot": [
+      "cultivation_mastery:advancement_rewards/test_loot"
+    ]
+  },
+  "sends_telemetry_event": true
+}

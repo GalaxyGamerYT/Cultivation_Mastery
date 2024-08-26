@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "high_spirit_stone_blasting",
+  "ingredient": {
+    "item": "cultivation_mastery:high_spirit_stone_ore"
+  },
+  "result": "cultivation_mastery:high_spirit_stone"
+}

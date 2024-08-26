@@ -1,0 +1,8 @@
+{
+  "parent": "cultivation_mastery:block/training_post",
+  "textures": {
+    "4": "minecraft:block/acacia_log_top",
+    "5": "minecraft:block/acacia_log",
+    "6": "minecraft:block/acacia_planks"
+  }
+}

@@ -1,0 +1,10 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "cultivation_mastery:block/training_post_bottom",
+	"textures": {
+		"3": "minecraft:block/oak_log_top",
+		"7": "minecraft:block/oak_log",
+		"8": "minecraft:block/oak_planks",
+		"particle": "minecraft:block/oak_log"
+	}
+}

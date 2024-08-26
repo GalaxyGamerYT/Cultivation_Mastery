@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "low_spirit_stone_smelting",
+  "ingredient": {
+    "item": "cultivation_mastery:deepslate_low_spirit_stone_ore"
+  },
+  "result": "cultivation_mastery:low_spirit_stone"
+}

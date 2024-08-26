@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "cultivation_mastery:block/jungle_training_post_bottom"
+    },
+    "half=upper": {
+      "model": "cultivation_mastery:block/jungle_training_post_top"
+    }
+  }
+}

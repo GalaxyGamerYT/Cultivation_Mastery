@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "medium_spirit_stone",
+  "ingredients": [
+    {
+      "item": "cultivation_mastery:high_spirit_stone"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "cultivation_mastery:medium_spirit_stone"
+  }
+}

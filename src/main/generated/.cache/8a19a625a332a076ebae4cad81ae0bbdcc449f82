@@ -1,0 +1,9 @@
+// 1.20.4	2024-08-25T23:00:24.6753977	Cultivation Mastery/Tags for minecraft:block
+7de3dc4659d37891926d20e062ad0c5d45ea81f0 data\cultivation_mastery\tags\blocks\medium_spirit_stone_ores.json
+86f1e814ef9f6405ee70496b91bde8cc3a0fe804 data\minecraft\tags\blocks\needs_iron_tool.json
+e04477ea1d38a225ebeaea2965099eb8f2ff42f9 data\cultivation_mastery\tags\blocks\low_spirit_stone_ores.json
+423d320bacadb9e310f78118846e80b6755cf20a data\minecraft\tags\blocks\mineable\pickaxe.json
+2f641937329edb17c2f255c48a9d08f45b10114d data\minecraft\tags\blocks\needs_diamond_tool.json
+5338cea20aec143e6d4c46007560294f98b82f5e data\cultivation_mastery\tags\blocks\high_spirit_stone_ores.json
+e724e61817c8a09adb57dad785080478e6e150ca data\cultivation_mastery\tags\blocks\wood_training_posts.json
+ff6a46ac84558d319b5754f0682d0864aa72489d data\fabric\tags\blocks\needs_tool_level_4.json

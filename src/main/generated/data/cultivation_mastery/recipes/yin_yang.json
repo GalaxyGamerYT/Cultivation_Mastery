@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:black_concrete"
+    },
+    "W": {
+      "item": "minecraft:white_concrete"
+    }
+  },
+  "pattern": [
+    "BBW",
+    "B W",
+    "BWW"
+  ],
+  "result": {
+    "item": "cultivation_mastery:yin_yang"
+  }
+}

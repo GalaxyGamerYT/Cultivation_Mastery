@@ -1,0 +1,9 @@
+{
+  "credit": "Made with Blockbench",
+  "parent": "cultivation_mastery:block/training_post_top",
+  "textures": {
+    "3": "minecraft:block/cherry_log_top",
+    "7": "minecraft:block/cherry_log",
+    "particle": "minecraft:block/cherry_log"
+  }
+}

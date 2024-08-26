@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "minecraft:dark_oak_planks"
+    },
+    "P": {
+      "item": "minecraft:dark_oak_log"
+    }
+  },
+  "pattern": [
+    " P ",
+    " P ",
+    "BBB"
+  ],
+  "result": {
+    "item": "cultivation_mastery:dark_oak_training_post"
+  }
+}

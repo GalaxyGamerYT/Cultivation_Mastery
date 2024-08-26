@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:bamboo_jungle",
+    "minecraft:birch_forest",
+    "minecraft:cherry_grove",
+    "minecraft:crimson_forest",
+    "minecraft:dark_forest",
+    "minecraft:flower_forest",
+    "minecraft:forest",
+    "minecraft:jungle",
+    "minecraft:grove",
+    "minecraft:lush_caves",
+    "minecraft:mangrove_swamp",
+    "minecraft:meadow",
+    "minecraft:mushroom_fields",
+    "minecraft:old_growth_birch_forest",
+    "minecraft:old_growth_pine_taiga",
+    "minecraft:old_growth_spruce_taiga",
+    "minecraft:savanna",
+    "minecraft:savanna_plateau",
+    "minecraft:snowy_slopes",
+    "minecraft:snowy_taiga",
+    "minecraft:soul_sand_valley",
+    "minecraft:sparse_jungle",
+    "minecraft:sunflower_plains",
+    "minecraft:swamp",
+    "minecraft:taiga",
+    "minecraft:warped_forest",
+    "minecraft:windswept_forest",
+    "minecraft:windswept_savanna"
+  ]
+}

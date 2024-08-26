@@ -1,0 +1,26 @@
+{
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "background": "cultivation_mastery:textures/item/yin_yang.png",
+    "description": "The start of your cultivation journey.",
+    "icon": {
+      "item": "cultivation_mastery:yin_yang"
+    },
+    "title": "Immortal Journey"
+  },
+  "requirements": [
+    [
+      "tick"
+    ]
+  ],
+  "rewards": {
+    "loot": [
+      "cultivation_mastery:grant_book_on_first_join"
+    ]
+  },
+  "sends_telemetry_event": true
+}

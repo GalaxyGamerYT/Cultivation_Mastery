@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "cultivation_mastery:oak_training_post",
+    "cultivation_mastery:spruce_training_post",
+    "cultivation_mastery:birch_training_post",
+    "cultivation_mastery:jungle_training_post",
+    "cultivation_mastery:acacia_training_post",
+    "cultivation_mastery:dark_oak_training_post",
+    "cultivation_mastery:mangrove_training_post",
+    "cultivation_mastery:cherry_training_post"
+  ]
+}

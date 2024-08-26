@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "cultivation_mastery:block/medium_spirit_stone_ore"
+  }
+}

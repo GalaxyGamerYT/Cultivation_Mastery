@@ -1,0 +1,40 @@
+{
+  "parent": "minecraft:cultivation_mastery/root",
+  "criteria": {
+    "got_spirit_stones": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cultivation_mastery:low_spirit_stone"
+            ]
+          },
+          {
+            "items": [
+              "cultivation_mastery:medium_spirit_stone"
+            ]
+          },
+          {
+            "items": [
+              "cultivation_mastery:high_spirit_stone"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Your first contact with spiritual energy",
+    "icon": {
+      "item": "cultivation_mastery:low_spirit_stone"
+    },
+    "title": "Spiritual Energy"
+  },
+  "requirements": [
+    [
+      "got_spirit_stones"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

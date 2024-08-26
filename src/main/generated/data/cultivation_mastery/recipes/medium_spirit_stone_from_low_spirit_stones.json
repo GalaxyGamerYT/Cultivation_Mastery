@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "medium_spirit_stone",
+  "key": {
+    "#": {
+      "item": "cultivation_mastery:low_spirit_stone"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "cultivation_mastery:medium_spirit_stone"
+  }
+}
