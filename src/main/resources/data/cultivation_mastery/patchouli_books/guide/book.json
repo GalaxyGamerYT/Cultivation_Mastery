@@ -1,0 +1,17 @@
+{
+  "name": "The Immortal Guide",
+  "subtitle": "",
+  "landing_text": "Welcome to $(bold)Cultivation Mastery$() where you cultivate to gain power and reach immortality.$(br2)This guide will help you traverse through the world of cultivation.",
+  "creative_tab": "cultivation_mastery:cultivation",
+  "use_resource_pack": true,
+  "show_progress": false,
+  "model": "cultivation_mastery:book_low_level",
+  "book_texture": "patchouli:textures/gui/book_blue.png",
+  "macros": {
+    "$(spiritual energy)": "$(d)Spiritual Energy/$",
+    "$(qi)": "$(3)QI/$",
+    "$(true qi)": "$(e)True Qi/$",
+    "$(divine qi)": "$(6)Divine $(9)Qi/$",
+    "$(heaven and earth)": "$(6)Heaven And Earth/$"
+  }
+}

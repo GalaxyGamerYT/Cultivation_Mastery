@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "cultivation_mastery",
+	"version": "${version}",
+	"name": "Cultivation Mastery",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"GalaxyGamerYT"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/cultivation_mastery/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"galaxygameryt.cultivation_mastery.CultivationMastery"
+		],
+		"fabric-datagen": [
+			"galaxygameryt.cultivation_mastery.CultivationMasteryDataGenerator"
+		]
+	},
+	"mixins": [
+		"cultivation_mastery.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.2",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*",
+		"cloth-config": "*",
+		"patchouli": "*"
+	},
+	"suggests": {
+		"modmenu": "*",
+		"rei": "*"
+	}
+}
