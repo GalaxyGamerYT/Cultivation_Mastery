@@ -20,12 +20,11 @@ public class BodyC2SPacket {
     public static void receive(MinecraftServer server, ServerPlayerEntity player, ServerPlayNetworkHandler handler,
                                PacketByteBuf buf, PacketSender responseSender) {
         ServerWorld world = (ServerWorld) player.getWorld();
-//        float data = BodyData.getBody((IEntityDataSaver) player);
         float data = buf.readFloat();
-        BodyData.addBody((IEntityDataSaver) player, data);
+        float bodyLevel = BodyData.addBody((IEntityDataSaver) player, data);
         world.playSound(null, player.getBlockPos(), SoundEvents.BLOCK_WOOD_BREAK, SoundCategory.PLAYERS,
                 0.5F, world.random.nextFloat() * 0.1F + 0.9F);
-        player.sendMessage(Text.literal(String.format("Body: %.2f", ((IEntityDataSaver) player).getPersistentData().getFloat("body")))
+        player.sendMessage(Text.literal(String.format("Body: %.2f", ((IEntityDataSaver) player).getBodyLevel()))
                 .fillStyle(Style.EMPTY.withColor(Formatting.AQUA)), false);
     }
 }

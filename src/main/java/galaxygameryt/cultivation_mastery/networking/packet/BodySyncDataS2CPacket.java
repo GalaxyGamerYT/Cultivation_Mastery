@@ -10,6 +10,6 @@ public class BodySyncDataS2CPacket {
     public static void recieve(MinecraftClient client, ClientPlayNetworkHandler handler,
                                PacketByteBuf buf, PacketSender responseSender) {
         float data = buf.readFloat();
-        ((IEntityDataSaver) client.player).getPersistentData().putFloat("body", data);
+        ((IEntityDataSaver) client.player).setBodyLevel(data);
     }
 }

@@ -4,7 +4,6 @@ import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
 import me.shedaniel.autoconfig.serializer.PartitioningSerializer;
 import net.fabricmc.api.ModInitializer;
-
 import galaxygameryt.cultivation_mastery.block.ModBlocks;
 import galaxygameryt.cultivation_mastery.config.ModConfig;
 import galaxygameryt.cultivation_mastery.event.PlayerCopyHandler;
@@ -34,7 +33,7 @@ public class CultivationMastery implements ModInitializer {
 
 		ModWorldGeneration.generateModWorldGen();
 
-		ServerPlayerEvents.COPY_FROM.register(new PlayerCopyHandler());
+//		ServerPlayerEvents.COPY_FROM.register(new PlayerCopyHandler());
 
 		LOGGER.info("Cultivation Mastery Loaded!");
 	}

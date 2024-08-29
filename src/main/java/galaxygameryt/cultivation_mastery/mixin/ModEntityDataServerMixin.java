@@ -1,9 +1,14 @@
 package galaxygameryt.cultivation_mastery.mixin;
 
+import galaxygameryt.cultivation_mastery.CultivationMastery;
 import galaxygameryt.cultivation_mastery.util.IEntityDataSaver;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.data.DataTracker;
+import net.minecraft.entity.data.TrackedData;
 import net.minecraft.nbt.NbtCompound;
+import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
@@ -11,27 +16,39 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(Entity.class)
 public abstract class ModEntityDataServerMixin implements IEntityDataSaver {
-    private NbtCompound persistentData;
+
+    private TrackedData<Float> BODY_LEVEL;
+
+//    @Shadow @Final DataTracker dataTracker;
+    DataTracker dataTracker = ((Entity)(Object)this).getDataTracker();
+
+    @Shadow
+    protected void initDataTracker() {
+        dataTracker.startTracking(BODY_LEVEL, 0.0F);
+    }
 
     @Override
-    public NbtCompound getPersistentData() {
-        if (this.persistentData == null) {
-            this.persistentData = new NbtCompound();
-        }
-        return persistentData;
+    public float getBodyLevel() {
+        return dataTracker.get(BODY_LEVEL);
+    }
+
+    @Override
+    public void setBodyLevel(float data) {
+        dataTracker.set(BODY_LEVEL, data);
+        CultivationMastery.LOGGER.info(String.format("Setting data - Data: %.2f, BodyLevel: %.2f", data, getBodyLevel()));
     }
 
     @Inject(method = "writeNbt", at = @At(value = "HEAD"))
-    protected void injectWriteMethod(NbtCompound nbt, CallbackInfoReturnable info) {
-        if (persistentData != null) {
-            nbt.put("cultivation_mastery.cultivation_data", persistentData);
+    protected void injectWriteNbtMethod(NbtCompound nbt, CallbackInfoReturnable<NbtCompound> cir) {
+        if (nbt != null) {
+            nbt.putFloat("cultivation_mastery.body_level", getBodyLevel());
         }
     }
 
     @Inject(method = "readNbt", at = @At(value = "HEAD"))
-    protected void injectReadMethod(NbtCompound nbt, CallbackInfo info) {
+    protected void injectReadNbtMethod(NbtCompound nbt, CallbackInfo ci) {
         if (nbt.contains("cultivation_mastery.cultivation_data", 10)) {
-            persistentData = nbt.getCompound("cultivation_mastery.cultivation_data");
+            setBodyLevel(nbt.getFloat("cultivation_mastery.body_level"));
         }
     }
 }
