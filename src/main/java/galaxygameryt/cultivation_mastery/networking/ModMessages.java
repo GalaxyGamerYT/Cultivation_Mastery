@@ -19,11 +19,11 @@ public class ModMessages {
 
     public static void registerC2SPackets() {
         ServerPlayNetworking.registerGlobalReceiver(BODY_LEVEL_ID, BodyC2SPacket::receive);
-//        ClientPlayNetworking.registerGlobalReceiver(BODY_LEVEL_SYNC_ID, BodySyncDataS2CPacket::recieve);
+//        ClientPlayNetworking.registerGlobalReceiver(BODY_LEVEL_SYNC_ID, BodySyncDataS2CPacket::receive);
     }
 
     public static void registerS2CPackets() {
-        ClientPlayNetworking.registerGlobalReceiver(BODY_LEVEL_SYNC_ID, BodySyncDataS2CPacket::recieve);
+        ClientPlayNetworking.registerGlobalReceiver(BODY_LEVEL_SYNC_ID, BodySyncDataS2CPacket::receive);
 //        ServerPlayNetworking.registerGlobalReceiver(BODY_LEVEL_ID, BodyC2SPacket::receive);
     }
 }
