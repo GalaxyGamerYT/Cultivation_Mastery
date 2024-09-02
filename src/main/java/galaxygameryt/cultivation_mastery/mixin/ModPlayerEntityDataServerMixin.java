@@ -24,7 +24,7 @@ public abstract class ModPlayerEntityDataServerMixin extends LivingEntity implem
         super(entityType, world);
     }
 
-    private static final TrackedData<Float> BODY_LEVEL = DataTracker.registerData(ModPlayerEntityDataServerMixin.class, TrackedDataHandlerRegistry.FLOAT);
+    private static final TrackedData<Float> BODY_LEVEL = DataTracker.registerData(PlayerEntity.class, TrackedDataHandlerRegistry.FLOAT);
 
     @Inject(method = "initDataTracker", at = @At(value = "HEAD"))
     protected void injectInitDataTrackerMethod(CallbackInfo ci) {
@@ -39,7 +39,6 @@ public abstract class ModPlayerEntityDataServerMixin extends LivingEntity implem
     @Override
     public void setBodyLevel(float data) {
         this.dataTracker.set(BODY_LEVEL, data);
-        CultivationMastery.LOGGER.info(String.format("Setting data - Data: %.2f, BodyLevel: %.2f", data, getBodyLevel()));
     }
 
     @Inject(method = "writeCustomDataToNbt", at = @At(value = "HEAD"))

@@ -15,15 +15,14 @@ public class BodyData {
 
     public static float addBody(IEntityDataSaver player, float amount) {
         float body = player.getBodyLevel();
-        CultivationMastery.LOGGER.info(String.format("AddBody Before - %.2f", body));
+
         body = body + amount;
 
         if (body >= 10) {
             body = 10;
         }
-        CultivationMastery.LOGGER.info(String.format("AddBody After - %.2f", body));
 
-        syncBody(body, (ServerPlayerEntity) player);
+        player.setBodyLevel(body);
         return body;
     }
 
