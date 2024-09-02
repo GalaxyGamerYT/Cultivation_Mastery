@@ -7,7 +7,7 @@ import net.minecraft.server.network.ServerPlayerEntity;
 public class PlayerCopyHandler implements ServerPlayerEvents.CopyFrom{
     @Override
     public void copyFromPlayer(ServerPlayerEntity oldPlayer, ServerPlayerEntity newPlayer, boolean alive) {
-        ((IEntityDataSaver) newPlayer).getPersistentData().putFloat("body",
-                ((IEntityDataSaver) oldPlayer).getPersistentData().getFloat("body"));
+//        ((IEntityDataSaver) newPlayer).getPersistentData().putFloat("body",
+//                ((IEntityDataSaver) oldPlayer).getPersistentData().getFloat("body"));
     }
 }

@@ -18,6 +18,9 @@
 		"main": [
 			"galaxygameryt.cultivation_mastery.CultivationMastery"
 		],
+		"client": [
+			"galaxygameryt.cultivation_mastery.CultivationMasteryClient"
+		],
 		"fabric-datagen": [
 			"galaxygameryt.cultivation_mastery.CultivationMasteryDataGenerator"
 		]

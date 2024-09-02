@@ -9,8 +9,6 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
-import vazkii.patchouli.api.PatchouliAPI;
-import vazkii.patchouli.common.item.PatchouliItems;
 
 public class ModItems {
     public static final Item YIN_YANG = registerItem("yin_yang",

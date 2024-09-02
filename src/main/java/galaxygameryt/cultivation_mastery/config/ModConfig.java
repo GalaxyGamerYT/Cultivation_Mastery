@@ -27,12 +27,15 @@ public class ModConfig extends PartitioningSerializer.GlobalData {
         @Tooltip
         public boolean essenceTooltipToggle = false;
 
+        @Tooltip
+        public boolean showBodyHudOverlay = false;
+
         public Debug() {
         }
     }
 
     @Config(name = "general")
-   public static final class General implements ConfigData {
+    public static final class General implements ConfigData {
         public General() {
         }
     }

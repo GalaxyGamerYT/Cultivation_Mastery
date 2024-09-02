@@ -14,6 +14,8 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.network.PacketByteBuf;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.property.Properties;
 import net.minecraft.text.Style;
 import net.minecraft.text.Text;
@@ -97,7 +99,11 @@ public class TrainingPostBlock extends TallPlantBlock {
         if (world.isClient()) {
             Random rand = new Random();
             float data = rand.nextFloat(0.2f,0.5f) * TRAININGMULTIPLIER;
-            ClientPlayNetworking.send(ModMessages.BODY_LEVEL_ID, PacketByteBufs.create().writeFloat(data));
+            BodyData.addBody((IEntityDataSaver) player, data);
+            world.playSound(null, player.getBlockPos(), SoundEvents.BLOCK_WOOD_BREAK, SoundCategory.PLAYERS,
+                    0.5F, world.random.nextFloat() * 0.1F + 0.9F);
+//            player.sendMessage(Text.literal(String.format("Body: %.2f", ((IEntityDataSaver) player).getBodyLevel()))
+//                    .fillStyle(Style.EMPTY.withColor(Formatting.AQUA)), false);
         }
     }
 }

@@ -1,7 +1,6 @@
 package galaxygameryt.cultivation_mastery.util;
 
-import net.minecraft.nbt.NbtCompound;
-
 public interface IEntityDataSaver {
-    NbtCompound getPersistentData();
+    float getBodyLevel();
+    void setBodyLevel(float data);
 }
