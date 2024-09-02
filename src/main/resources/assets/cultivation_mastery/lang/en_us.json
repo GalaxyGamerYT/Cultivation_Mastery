@@ -46,7 +46,5 @@
   "text.autoconfig.cultivation_mastery.option.debug.showBodyHudOverlay": "Show Body Hud Overlay Toggle",
 
   "text.autoconfig.cultivation_mastery.option.debug.essenceTooltipToggle.@Tooltip": "Controls if you can see the unknown text on the tooltips for the essence items",
-  "text.autoconfig.cultivation_mastery.option.debug.showBodyHudOverlay.@Tooltip": "Controls if you can see the body hud overlay",
-
-  "hud.cultivation_mastery.text.body": "Body: %.2f"
+  "text.autoconfig.cultivation_mastery.option.debug.showBodyHudOverlay.@Tooltip": "Controls if you can see the body hud overlay"
 }

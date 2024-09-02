@@ -50,7 +50,7 @@ public abstract class ModPlayerEntityDataServerMixin extends LivingEntity implem
 
     @Inject(method = "readCustomDataFromNbt", at = @At(value = "HEAD"))
     protected void injectReadCustomDataFromNbtMethod(NbtCompound nbt, CallbackInfo ci) {
-        if (nbt.contains("cultivation_mastery.cultivation_data", 10)) {
+        if (nbt.contains("cultivation_mastery.body_level")) {
             setBodyLevel(nbt.getFloat("cultivation_mastery.body_level"));
         }
     }

@@ -102,8 +102,8 @@ public class TrainingPostBlock extends TallPlantBlock {
             BodyData.addBody((IEntityDataSaver) player, data);
             world.playSound(null, player.getBlockPos(), SoundEvents.BLOCK_WOOD_BREAK, SoundCategory.PLAYERS,
                     0.5F, world.random.nextFloat() * 0.1F + 0.9F);
-            player.sendMessage(Text.literal(String.format("Body: %.2f", ((IEntityDataSaver) player).getBodyLevel()))
-                    .fillStyle(Style.EMPTY.withColor(Formatting.AQUA)), false);
+//            player.sendMessage(Text.literal(String.format("Body: %.2f", ((IEntityDataSaver) player).getBodyLevel()))
+//                    .fillStyle(Style.EMPTY.withColor(Formatting.AQUA)), false);
         }
     }
 }
