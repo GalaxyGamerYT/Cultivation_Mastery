@@ -2,56 +2,115 @@ package galaxygameryt.cultivation_mastery.mixin;
 
 import galaxygameryt.cultivation_mastery.CultivationMastery;
 import galaxygameryt.cultivation_mastery.util.IEntityDataSaver;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.data.DataTracker;
-import net.minecraft.entity.data.TrackedData;
-import net.minecraft.entity.data.TrackedDataHandlerRegistry;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.nbt.NbtCompound;
-import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(PlayerEntity.class)
-public abstract class ModPlayerEntityDataServerMixin extends LivingEntity implements IEntityDataSaver {
-    protected ModPlayerEntityDataServerMixin(EntityType<? extends LivingEntity> entityType, World world) {
-        super(entityType, world);
-    }
+public abstract class ModPlayerEntityDataServerMixin implements IEntityDataSaver {
+//tickControlled
+    private static float body_level = 0f;
+    private static float cultivation_level = 0f;
+    private static float qi_level = 0f;
 
-    private static final TrackedData<Float> BODY_LEVEL = DataTracker.registerData(PlayerEntity.class, TrackedDataHandlerRegistry.FLOAT);
-
-    @Inject(method = "initDataTracker", at = @At(value = "HEAD"))
-    protected void injectInitDataTrackerMethod(CallbackInfo ci) {
-        this.dataTracker.startTracking(BODY_LEVEL, 0.0F);
-    }
+    private static float max_qi = 0f;
+    private static float qi_increase = 0f;
+    private static boolean immortality = false;
 
     @Override
     public float getBodyLevel() {
-        return this.dataTracker.get(BODY_LEVEL);
+        return body_level;
     }
 
     @Override
     public void setBodyLevel(float data) {
-        this.dataTracker.set(BODY_LEVEL, data);
+        body_level = data;
     }
 
-    @Inject(method = "writeCustomDataToNbt", at = @At(value = "HEAD"))
+    @Override
+    public float getCultivationLevel(){
+        return cultivation_level;
+    }
+
+    @Override
+    public void setCultivationLevel(float data) {
+        cultivation_level = data;
+    }
+
+    @Override
+    public float getQiLevel(){
+        return qi_level;
+    }
+
+    @Override
+    public void setQiLevel(float data) {
+        qi_level = data;
+    }
+
+    @Override
+    public boolean getImmortality(){
+        return immortality;
+    }
+
+    @Override
+    public void setImmortality(boolean data) {
+        immortality = data;
+    }
+
+    @Override
+    public float getMaxQi(){
+        return max_qi;
+    }
+
+    @Override
+    public void setMaxQi(float data) {
+        max_qi = data;
+    }
+
+    @Override
+    public float getQiIncrease(){
+        return qi_increase;
+    }
+
+    @Override
+    public void setQiIncrease(float data) {
+        qi_increase = data;
+    }
+
+    @Inject(method = "writeCustomDataToNbt", at = @At(value = "TAIL"))
     protected void injectWriteCustomDataToNbtMethod(NbtCompound nbt, CallbackInfo ci) {
         if (nbt != null) {
-            nbt.putFloat("cultivation_mastery.body_level", getBodyLevel());
+            nbt.putFloat(CultivationMastery.MOD_ID+".body_level", body_level);
+            nbt.putFloat(CultivationMastery.MOD_ID+".cultivation_level", cultivation_level);
+            nbt.putFloat(CultivationMastery.MOD_ID+".qi_level", qi_level);
+            nbt.putFloat(CultivationMastery.MOD_ID+".max_qi_level", max_qi);
+            nbt.putFloat(CultivationMastery.MOD_ID+".qi_increase", qi_increase);
+            nbt.putBoolean(CultivationMastery.MOD_ID+".immortality", immortality);
         }
     }
 
-    @Inject(method = "readCustomDataFromNbt", at = @At(value = "HEAD"))
+    @Inject(method = "readCustomDataFromNbt", at = @At(value = "TAIL"))
     protected void injectReadCustomDataFromNbtMethod(NbtCompound nbt, CallbackInfo ci) {
-        if (nbt.contains("cultivation_mastery.body_level")) {
-            setBodyLevel(nbt.getFloat("cultivation_mastery.body_level"));
+        if (nbt.contains(CultivationMastery.MOD_ID+".body_level")) {
+            body_level = nbt.getFloat(CultivationMastery.MOD_ID+".body_level");
+        }
+        if (nbt.contains(CultivationMastery.MOD_ID+".cultivation_level")) {
+            cultivation_level = nbt.getFloat(CultivationMastery.MOD_ID+".cultivation_level");
+        }
+        if (nbt.contains(CultivationMastery.MOD_ID+".qi_level")) {
+            qi_level = nbt.getFloat(CultivationMastery.MOD_ID+".qi_level");
+        }
+        if (nbt.contains(CultivationMastery.MOD_ID+".max_qi_level")) {
+            max_qi = nbt.getFloat(CultivationMastery.MOD_ID+".max_qi_level");
+        }
+        if (nbt.contains(CultivationMastery.MOD_ID+".qi_increase")) {
+            qi_increase = nbt.getFloat(CultivationMastery.MOD_ID+".qi_increase");
+        }
+        if (nbt.contains(CultivationMastery.MOD_ID+".immortality")) {
+            immortality = nbt.getBoolean(CultivationMastery.MOD_ID+".immortality");
         }
     }
 }

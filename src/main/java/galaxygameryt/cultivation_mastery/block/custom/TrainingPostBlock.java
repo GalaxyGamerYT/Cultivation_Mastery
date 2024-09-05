@@ -1,19 +1,12 @@
 package galaxygameryt.cultivation_mastery.block.custom;
 
 import com.mojang.serialization.MapCodec;
-import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
-import net.fabricmc.fabric.api.networking.v1.PacketByteBufs;
-import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
-import galaxygameryt.cultivation_mastery.networking.ModMessages;
-import galaxygameryt.cultivation_mastery.util.BodyData;
+import galaxygameryt.cultivation_mastery.util.data.BodyData;
 import galaxygameryt.cultivation_mastery.util.IEntityDataSaver;
 import net.minecraft.block.*;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
-import net.minecraft.network.PacketByteBuf;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.property.Properties;
@@ -25,7 +18,6 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.function.BooleanBiFunction;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
@@ -101,7 +93,7 @@ public class TrainingPostBlock extends TallPlantBlock {
             float data = rand.nextFloat(0.2f,0.5f) * TRAININGMULTIPLIER;
             BodyData.addBody((IEntityDataSaver) player, data);
             world.playSound(null, player.getBlockPos(), SoundEvents.BLOCK_WOOD_BREAK, SoundCategory.PLAYERS,
-                    0.5F, world.random.nextFloat() * 0.1F + 0.9F);
+                    0.5F, world.random.nextFloat() * 0.01F + 0.9F);
 //            player.sendMessage(Text.literal(String.format("Body: %.2f", ((IEntityDataSaver) player).getBodyLevel()))
 //                    .fillStyle(Style.EMPTY.withColor(Formatting.AQUA)), false);
         }

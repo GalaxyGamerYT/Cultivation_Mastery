@@ -1,13 +1,7 @@
 package galaxygameryt.cultivation_mastery.event;
 
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
-import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
-import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
-import net.fabricmc.fabric.api.networking.v1.PacketByteBufs;
-import galaxygameryt.cultivation_mastery.networking.ModMessages;
-import net.minecraft.client.option.KeyBinding;
-import net.minecraft.client.util.InputUtil;
-import org.lwjgl.glfw.GLFW;
+
 
 public class KeyInputHandler {
     public static final String KEY_CATEGORY_CULTIVATION_MASTERY = "key.category.cultivation_mastery.debug";

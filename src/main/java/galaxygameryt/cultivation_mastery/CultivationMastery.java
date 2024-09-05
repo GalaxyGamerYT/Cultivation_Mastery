@@ -8,7 +8,6 @@ import galaxygameryt.cultivation_mastery.block.ModBlocks;
 import galaxygameryt.cultivation_mastery.config.ModConfig;
 import galaxygameryt.cultivation_mastery.item.ModItemGroups;
 import galaxygameryt.cultivation_mastery.item.ModItems;
-import galaxygameryt.cultivation_mastery.networking.ModMessages;
 import galaxygameryt.cultivation_mastery.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,8 +25,6 @@ public class CultivationMastery implements ModInitializer {
 		ModItemGroups.regiserItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
-
-//		ModMessages.registerC2SPackets();
 
 		ModWorldGeneration.generateModWorldGen();
 
