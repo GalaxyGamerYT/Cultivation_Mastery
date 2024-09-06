@@ -25,4 +25,6 @@ public interface IEntityDataSaver {
     float getQiIncrease();
 
     void setQiIncrease(float data);
+
+    boolean isImmortalToDamage(String check_type, float value);
 }

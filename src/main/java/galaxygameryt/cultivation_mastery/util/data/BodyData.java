@@ -1,6 +1,7 @@
 package galaxygameryt.cultivation_mastery.util.data;
 
 import galaxygameryt.cultivation_mastery.util.IEntityDataSaver;
+import net.minecraft.entity.player.PlayerEntity;
 
 public class BodyData {
     private static final String[] BODY_LEVELS = {
@@ -21,6 +22,9 @@ public class BodyData {
 
         if (body > 70) {
             body = 70;
+        }
+        if (body >= 30) {
+            ((PlayerEntity) player)
         }
 
         player.setBodyLevel(body);

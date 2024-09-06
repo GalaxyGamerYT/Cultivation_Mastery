@@ -1,13 +1,17 @@
 package galaxygameryt.cultivation_mastery.mixin;
 
+import com.llamalad7.mixinextras.expression.Expression;
 import galaxygameryt.cultivation_mastery.CultivationMastery;
 import galaxygameryt.cultivation_mastery.util.IEntityDataSaver;
+import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.nbt.NbtCompound;
+import net.minecraft.registry.tag.DamageTypeTags;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(PlayerEntity.class)
 public abstract class ModPlayerEntityDataServerMixin implements IEntityDataSaver {
@@ -111,6 +115,23 @@ public abstract class ModPlayerEntityDataServerMixin implements IEntityDataSaver
         }
         if (nbt.contains(CultivationMastery.MOD_ID+".immortality")) {
             immortality = nbt.getBoolean(CultivationMastery.MOD_ID+".immortality");
+        }
+    }
+
+    @Expression("return amount == 0.0")
+    @Inject(method = "damage", at = @At(value = "MIXINEXTRAS:EXPRESSION", shift = At.Shift.BEFORE))
+    protected float injectDamageMethod(DamageSource source, float amount, CallbackInfoReturnable<Float> cir) {
+        if (source.isIn(DamageTypeTags.IS_FIRE)) {
+
+        }
+    }
+
+    @Override
+    public boolean isImmortalToDamage(String check_type, float value) {
+        if (check_type == "body") {
+            return body_level > value;
+        } else if (check_type == "cultivation") {
+            return cultivation_level > value;
         }
     }
 }
