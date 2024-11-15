@@ -23,9 +23,6 @@ public class BodyData {
         if (body > 70) {
             body = 70;
         }
-        if (body >= 30) {
-            ((PlayerEntity) player)
-        }
 
         player.setBodyLevel(body);
     }
@@ -33,17 +30,27 @@ public class BodyData {
     public static String getBodyLevel(IEntityDataSaver player) {
         float body = player.getBodyLevel();
 
-        int index = (int) Math.floor((double) body/10);
+        int index = getBodyIndex(body);
 
-        String body_level = BODY_LEVELS[index]+" "+getBodyIncrement(player, body, index);
+        String body_level = BODY_LEVELS[index]+" "+getBodyIncrement(body, index);
         return BODY_LEVELS[index];
     }
 
-    public static String getBodyIncrement(IEntityDataSaver player, float body, int body_level) {
-        int index = (int) Math.floor((double) body-(body_level*10));
+    public static String getBodyIncrement(float body, int body_level) {
+        int index = getBodyIncrementIndex(body, body_level);
 
         String increment = BODY_INCREMENTS[index];
 
         return increment;
+    }
+
+    public static int getBodyIndex(float body) {
+        int index = (int) Math.floor((double) body/10);
+        return index;
+    }
+
+    public static int getBodyIncrementIndex(float body, int body_level) {
+        int index = (int) Math.floor((double) body-(body_level*10));
+        return index;
     }
 }

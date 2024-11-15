@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "cultivation_mastery:block/gem_cutter_bottom"
+    },
+    "half=upper": {
+      "model": "cultivation_mastery:block/gem_cutter_top"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "cultivation_mastery:block/gem_cutter",
+  "textures": {
+    "layer0": "cultivation_mastery:block/gem_cutter"
+  }
+}

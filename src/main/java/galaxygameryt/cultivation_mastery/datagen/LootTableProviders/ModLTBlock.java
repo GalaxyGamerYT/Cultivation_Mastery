@@ -41,6 +41,8 @@ public class ModLTBlock extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.LOW_SPIRIT_STONE_ORE, copperLikeOreDrops(ModBlocks.LOW_SPIRIT_STONE_ORE, ModItems.HIGH_SPIRIT_STONE));
         addDrop(ModBlocks.DEEPSLATE_HIGH_SPIRIT_STONE_ORE, copperLikeOreDrops(ModBlocks.DEEPSLATE_HIGH_SPIRIT_STONE_ORE, ModItems.HIGH_SPIRIT_STONE));
 
+        addDrop(ModBlocks.GEM_CUTTER, doorLikeDrops(ModBlocks.GEM_CUTTER));
+
     }
 
     public LootTable.Builder doorLikeDrops(Block block) {
