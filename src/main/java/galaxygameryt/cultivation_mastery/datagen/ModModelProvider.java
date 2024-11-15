@@ -38,6 +38,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_MEDIUM_SPIRIT_STONE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.HIGH_SPIRIT_STONE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_HIGH_SPIRIT_STONE_ORE);
+
+        blockStateModelGenerator.registerDoubleBlock(ModBlocks.GEM_CUTTER,
+                BlockStateModelGenerator.TintType.NOT_TINTED);
     }
 
     @Override

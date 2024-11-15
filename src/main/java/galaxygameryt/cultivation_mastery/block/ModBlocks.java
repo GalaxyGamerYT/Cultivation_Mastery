@@ -1,5 +1,6 @@
 package galaxygameryt.cultivation_mastery.block;
 
+import galaxygameryt.cultivation_mastery.block.custom.GemCutterBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import galaxygameryt.cultivation_mastery.CultivationMastery;
@@ -40,6 +41,8 @@ public class ModBlocks {
             new ExperienceDroppingBlock(UniformIntProvider.create(6,9), FabricBlockSettings.copyOf(Blocks.STONE).strength(3f)));
     public static final Block DEEPSLATE_HIGH_SPIRIT_STONE_ORE = registerBlock("deepslate_high_spirit_stone_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(2,5), FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(5f)));
+
+    public static final Block GEM_CUTTER = registerBlock("gem_cutter", new GemCutterBlock(FabricBlockSettings.copyOf(Blocks.STONECUTTER)));
 
     public static Block registerTrainingPost(String name, float trainingMultiplier) {
         return registerBlock(name, new TrainingPostBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)

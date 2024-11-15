@@ -1,4 +1,4 @@
-// 1.20.4	2024-08-26T03:40:51.3257254	Cultivation Mastery/Block Loot Tables
+// 1.20.4	2024-09-08T03:36:26.1251051	Cultivation Mastery/Block Loot Tables
 ebf078f5e83792a29107cc962f173e8a3a62ad6e data\cultivation_mastery\loot_tables\blocks\low_spirit_stone_ore.json
 7d5f1a76424101c542c0f5be0edc23a4d1059dfc data\cultivation_mastery\loot_tables\blocks\deepslate_low_spirit_stone_ore.json
 9d517fec00e88c7d9a0dbba5854651ef9081ec78 data\cultivation_mastery\loot_tables\blocks\acacia_training_post.json
@@ -11,3 +11,4 @@ f6a8a0fc9832353289437ef52630b447fe5831ec data\cultivation_mastery\loot_tables\bl
 e8883d2fd749611d12d90c9402411939e4a2db7b data\cultivation_mastery\loot_tables\blocks\deepslate_medium_spirit_stone_ore.json
 1018084570e2a613cb3cb4626096553edf4fbe64 data\cultivation_mastery\loot_tables\blocks\birch_training_post.json
 d9247b3f22bfed24683259d7af5327b4dc6c0bdd data\cultivation_mastery\loot_tables\blocks\oak_training_post.json
+14a9fd18c20aa1d776e994e18ab44630eb850666 data\cultivation_mastery\loot_tables\blocks\gem_cutter.json

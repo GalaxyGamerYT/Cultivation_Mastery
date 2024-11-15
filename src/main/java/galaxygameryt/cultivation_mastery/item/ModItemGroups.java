@@ -34,6 +34,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.HIGH_SPIRIT_STONE_ORE);
                         entries.add(ModBlocks.DEEPSLATE_HIGH_SPIRIT_STONE_ORE);
 
+                        entries.add(ModBlocks.GEM_CUTTER);
+
                         entries.add(ModItems.LOW_SPIRIT_STONE);
                         entries.add(ModItems.MEDIUM_SPIRIT_STONE);
                         entries.add(ModItems.HIGH_SPIRIT_STONE);
