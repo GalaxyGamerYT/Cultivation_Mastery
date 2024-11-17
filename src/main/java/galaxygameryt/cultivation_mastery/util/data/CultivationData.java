@@ -29,4 +29,8 @@ public class CultivationData {
 
         return CULTIVATION_LEVELS[index];
     }
+
+    public static void setCultivation(IEntityDataSaver player, float amount) {
+        player.setCultivationLevel(amount);
+    }
 }
