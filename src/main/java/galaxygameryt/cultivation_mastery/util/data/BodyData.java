@@ -14,14 +14,30 @@ public class BodyData {
             "Immortal Body"
     };
     private static final String[] BODY_INCREMENTS = {"I","II","III","IV","V","VI","VII","VIII","IX"};
+    private static final float maxBody = 70;
 
     public static void addBody(IEntityDataSaver player, float amount) {
-        float body = player.getBodyLevel();
+        float currentBody = player.getBodyLevel();
+        float body = 0;
 
-        body = body + amount;
+        body = currentBody + amount;
 
-        if (body > 70) {
-            body = 70;
+        if (body > maxBody) {
+            body = maxBody;
+        }
+
+        player.setBodyLevel(body);
+    }
+
+    public static void setBody(IEntityDataSaver player, float amount) {
+        float body = 0;
+
+        if (amount >= maxBody) {
+            body = maxBody;
+        } else if (amount <= 0) {
+            body = 0;
+        } else {
+            body = amount;
         }
 
         player.setBodyLevel(body);

@@ -1,5 +1,6 @@
 package galaxygameryt.cultivation_mastery;
 
+import galaxygameryt.cultivation_mastery.command.ModCommands;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
 import me.shedaniel.autoconfig.serializer.PartitioningSerializer;
@@ -27,6 +28,8 @@ public class CultivationMastery implements ModInitializer {
 		ModBlocks.registerModBlocks();
 
 		ModWorldGeneration.generateModWorldGen();
+
+		ModCommands.registerCommands();
 
 		LOGGER.info("Cultivation Mastery Loaded!");
 	}
